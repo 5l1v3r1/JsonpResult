@@ -1,0 +1,17 @@
+startup.cs
+
+
+public void ConfigureServices(IServiceCollection services)
+{
+	......
+        services.AddSingleton<JsonpResultExecutor>();
+        ......
+}
+
+
+Controller
+
+using SmartMap.NetPlatform.Core.Common;
+
+.....
+this.Jsonp(you data);
